@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Tonalidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Detector de Tonalidade</h1>
+        
+        <div class="button-container">
+            <button id="startButton">
+                <span class="status-indicator" id="statusIndicator"></span>
+                Iniciar Detecção
+            </button>
+        </div>
+        
+        <div class="result-container">
+            <div class="result-label">Tonalidade Detectada:</div>
+            <span id="keyDisplay">--</span>
+        </div>
+        
+        <div class="chords-container">
+            <div class="result-label">Acordes Sugeridos:</div>
+            <div id="chordsDisplay">--</div>
+        </div>
+        
+        <div class="info-text">
+            Clique no botão e cante ou toque um instrumento para detectar a tonalidade em tempo real.
+        </div>
+    </div>
+    
+    <script src="key_detection.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
